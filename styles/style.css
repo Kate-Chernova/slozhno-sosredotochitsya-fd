@@ -1,3 +1,4 @@
+
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
@@ -7,7 +8,7 @@
   font-weight: var(--font-weight-regular);
   font-size: 1.125rem;
   line-height: var(--line-height-text);
-  background-image: var( --page-background-image, url("../images/cover-image.png"));
+  background-image: var(--bg-img);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -70,7 +71,6 @@
   margin-block-end: 2px;
 }
 
-
 .header__theme-menu-list {
   margin-block-start: 64px;
   display: grid;
@@ -96,14 +96,15 @@
 }
 
 .header__theme-menu-button {
-  padding: 4px 13px;
-  background-color: inherit;
-  border: none;
-  font-size: var(--regular-font-size);
-  line-height: var(--regular-line-height);
-  text-transform: lowercase;
-  color: var(--button-color);
-  cursor: pointer;
+  font-size: var(--line-height-text);
+  line-height: var(--line-height-text);
+  font-weight: var(--font-weight-regular);
+  font-style: normal;
+  display: inline-block;
+  background-color: transparent;
+  color: var(--accent-color);
+  padding-inline: 13px;
+  padding-block-end: 5px;
 }
 
 .header__theme-menu-button:focus {
@@ -140,8 +141,10 @@
 
 .section {
   display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 40px;
+  width: fit-content;
+  padding: var(--main-gap);
+  margin-block-start: 29px;
+  gap: 50px;
 }
 
 .content-section {
@@ -157,21 +160,21 @@
   color: var(--main-title-color);
 }
 
-.advice-title {
+.post-advice-title {
   color: var(--second-title-color);
   font-size: var(--line-height-text);
   line-height: 23.4px;
   font-weight: var(--font-weight-bold);
 }
 
-.advice-title-regular {
+.post-advice-title-regular {
   color: var(--second-title-color);
   font-size: var(--line-height-text);
   line-height: 23.4px;
   font-weight: var(--font-weight-regular);
 }
 
-.advice-description {
+.post-advice-description {
   margin-block-start: 10px;
   color: var(--description-text-color);
   font-size: var(--line-height-text);
@@ -201,7 +204,7 @@
   gap: 20px;
 }
 
-.advice__last-of-type {
+.advice-title__last-of-type {
   color: var(--second-title-color);
   font-size: var(--line-height-text);
   line-height: 23.4px;
@@ -296,12 +299,12 @@
     grid-column: 2/2;
   }
 
-  .advicer-title {
+  .advice-title {
     width: 100%;
     max-width: 236px;
   }
 
-  .advice-title {
+  .post-advice-title {
     margin-block-start: 0px;
     max-height: 25%;
   }
@@ -311,7 +314,7 @@
     grid-column: 2/3;
   }
 
-  .advice__last-of-type {
+  .advice-title__last-of-type {
     margin: 0;
   }
 
@@ -404,7 +407,7 @@
     max-width: 315px;
   }
 
-  .advice-title {
+  .post-advice-title {
     max-height: 35%;
   }
 
