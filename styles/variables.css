@@ -4,18 +4,20 @@
 */
 :root {
   --bg-color: #000028;
-  --h1-title-color: #DB00FF;
-  --paragraph-bg-color: #FF0070;
   --accent-color: #FF0070;
-  --accent-color-hover: rgba(255, 0, 112, 0.4);
-  --accent-color-button-hover: rgba(255, 0, 112, 0.4);
-  --main-title-color: #FF0070;
-  --description-text-color: #F1B2CE;
-  --second-title-color: #000028; 
-  --main-font-family: 'IBM Plex Mono', sans-serif;
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --line-height-text: 18px;
-  --main-gap: 10px;
-  --decorated-gap: 20px;
+  --header-decoration-color: #FF0070;
+  --decorated-zon_rec: visible;
+  --decoration-color: #FF0070;
+  --title-color: #DB00FF;
+  --title-color-shadow: #FF0070;
+  --text-color-title: #FF0070;
+  --text-color:#F1B2CE;
+  --text-color-decor: #000028;
+  --bg-image: url('../images/cover-image-dark.png');
+  --main-font: 'IBM Plex Mono';
+  --main-font-size: 18px;
+  --button-text-color: #ff0070;
+  --button-border-color: #ff0070;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --link-color: #F1B2CE;
 }
