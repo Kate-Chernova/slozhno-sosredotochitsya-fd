@@ -5,19 +5,19 @@
 :root {
   --bg-color: #000028;
   --accent-color: #FF0070;
-  --header-decoration-color: #FF0070;
+  --header-decoration-color: var(--accent-color);
   --decorated-zon_rec: visible;
-  --decoration-color: #FF0070;
+  --decoration-color: var(--accent-color);
   --title-color: #DB00FF;
-  --title-color-shadow: #FF0070;
-  --text-color-title: #FF0070;
+  --title-color-shadow: var(--accent-color);
+  --text-color-title: var(--accent-color);
   --text-color:#F1B2CE;
-  --text-color-decor: #000028;
+  --text-color-decor:var(--bg-color);
   --bg-image: url('../images/cover-image-dark.png');
   --main-font: 'IBM Plex Mono';
   --main-font-size: 18px;
-  --button-text-color: #ff0070;
-  --button-border-color: #ff0070;
+  --button-text-color: var(--accent-color);
+  --button-border-color: var(--accent-color);
   --button-hover: rgba(255, 0, 112, 0.4);
-  --link-color: #F1B2CE;
+  --link-color: var(--text-color);
 }
